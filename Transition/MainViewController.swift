@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     let presentAnimationController: AnimationController = AnimationController()
 
     @IBOutlet private weak var imageView: UIImageView!
+    
     @IBAction func onTapButton(_ sender: Any) {
         presentAnimationController.selectedCardFrame = imageView.frame
         self.performSegue(withIdentifier: "showDetail", sender: nil)
@@ -24,13 +25,14 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UIViewControllerTransitioningDelegate {
+extension MainViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController,
                              presenting: UIViewController,
                              source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return presentAnimationController
     }
+    
 }
 
 

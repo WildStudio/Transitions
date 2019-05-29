@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Transition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Transition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="sKZ-Ft-aHv" id="P9p-ag-VD7"/>
-                        <segue destination="vok-Ig-HSc" kind="presentation" identifier="showDetail" id="ead-Bx-jFE"/>
+                        <segue destination="vok-Ig-HSc" kind="presentation" identifier="showDetail" modalPresentationStyle="overCurrentContext" id="ead-Bx-jFE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,6 +133,11 @@
                                             <constraint firstAttribute="trailing" secondItem="fU8-dT-nSO" secondAttribute="trailing" id="pxp-5a-eRl"/>
                                             <constraint firstItem="fU8-dT-nSO" firstAttribute="top" secondItem="i2d-DZ-5JJ" secondAttribute="top" id="zoD-QV-W2E"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
