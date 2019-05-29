@@ -18,12 +18,6 @@ class DetailViewController: UIViewController {
     @IBOutlet private weak var containerBottomConstraint: NSLayoutConstraint!
     @IBOutlet private weak var scrollView: UIScrollView!
     
-    private var lastContentOffset: CGFloat = 0
-    
-    var isLeftAligned: Bool {
-        return containerLeadingConstraint.constant == 0
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
