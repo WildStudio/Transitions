@@ -12,8 +12,9 @@ class ViewController: UIViewController {
     
     let presentAnimationController: AnimationController = AnimationController()
 
+    @IBOutlet private weak var imageView: UIImageView!
     @IBAction func onTapButton(_ sender: Any) {
-        
+        presentAnimationController.selectedCardFrame = imageView.frame
         self.performSegue(withIdentifier: "showDetail", sender: nil)
     }
     

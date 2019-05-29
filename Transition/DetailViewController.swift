@@ -16,11 +16,16 @@ class DetailViewController: UIViewController {
     @IBOutlet private weak var containerTrailingConstraint: NSLayoutConstraint!
     @IBOutlet private weak var containerTopConstraint: NSLayoutConstraint!
     @IBOutlet private weak var containerBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var scrollView: UIScrollView!
     
-
+    private var lastContentOffset: CGFloat = 0
+    
+    var isLeftAligned: Bool {
+        return containerLeadingConstraint.constant == 0
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
     }
     
     func positionContainer(left: CGFloat, right: CGFloat, top: CGFloat, bottom: CGFloat) {
@@ -32,11 +37,10 @@ class DetailViewController: UIViewController {
     }
     
     func setRoundedCorners(isRounded: Bool) {
-        view.layer.cornerRadius = isRounded ? 14.0 : 0.0
+        contentContainerView.layer.cornerRadius = isRounded ? 14.0 : 0.0
     }
     
     @IBAction func onClose() {
         self.dismiss(animated: true)
     }
 }
-

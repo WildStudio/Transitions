@@ -18,9 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byR-IL-xtN">
-                                <rect key="frame" x="147" y="328.5" width="81" height="30"/>
-                                <state key="normal" title="Show Detail"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ice-fire" translatesAutoresizingMaskIntoConstraints="NO" id="sKZ-Ft-aHv">
+                                <rect key="frame" x="149.5" y="261" width="76" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="IGM-DZ-7jK"/>
+                                    <constraint firstAttribute="height" constant="105" id="pSj-gj-QvP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byR-IL-xtN">
+                                <rect key="frame" x="149.5" y="261" width="76" height="105"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="onTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxG-AW-f0y"/>
                                 </connections>
@@ -28,18 +38,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="byR-IL-xtN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HoZ-Qk-8ru"/>
-                            <constraint firstItem="byR-IL-xtN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aej-58-Tgb"/>
+                            <constraint firstItem="byR-IL-xtN" firstAttribute="trailing" secondItem="sKZ-Ft-aHv" secondAttribute="trailing" id="CBg-zm-iFe"/>
+                            <constraint firstItem="sKZ-Ft-aHv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jce-bj-03T"/>
+                            <constraint firstItem="byR-IL-xtN" firstAttribute="leading" secondItem="sKZ-Ft-aHv" secondAttribute="leading" id="TYL-mQ-Zbf"/>
+                            <constraint firstItem="byR-IL-xtN" firstAttribute="bottom" secondItem="sKZ-Ft-aHv" secondAttribute="bottom" id="ZS2-oc-Scn"/>
+                            <constraint firstItem="sKZ-Ft-aHv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-30" id="cJF-Vi-H6U"/>
+                            <constraint firstItem="byR-IL-xtN" firstAttribute="top" secondItem="sKZ-Ft-aHv" secondAttribute="top" id="phm-eT-wa8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="sKZ-Ft-aHv" id="P9p-ag-VD7"/>
                         <segue destination="vok-Ig-HSc" kind="presentation" identifier="showDetail" id="ead-Bx-jFE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669.60000000000002" y="91.304347826086968"/>
+            <point key="canvasLocation" x="622" y="90"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="brC-61-Hz8">
@@ -146,14 +161,16 @@
                         <outlet property="containerTopConstraint" destination="5ml-VX-FEj" id="FWb-n0-VH7"/>
                         <outlet property="containerTrailingConstraint" destination="Lw3-Or-f92" id="ung-FE-4n6"/>
                         <outlet property="contentContainerView" destination="dce-FR-Yo9" id="kAP-XD-zME"/>
+                        <outlet property="scrollView" destination="i2d-DZ-5JJ" id="gog-fk-hUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhc-qF-Rrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888.8" y="90.404797601199405"/>
+            <point key="canvasLocation" x="1535" y="91"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ice-fire" width="1524" height="2102"/>
         <image name="light-close-button" width="40" height="40"/>
     </resources>
 </document>
