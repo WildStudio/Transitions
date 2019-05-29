@@ -9,12 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let presentAnimationController: AnimationController = AnimationController()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func onTapButton(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "showDetail", sender: nil)
     }
-
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationViewController = segue.destination
+        destinationViewController.transitioningDelegate = self
+    }
 }
+
+extension ViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return presentAnimationController
+    }
+}
+
 

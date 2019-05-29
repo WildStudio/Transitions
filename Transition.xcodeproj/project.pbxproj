@@ -13,6 +13,8 @@
 		88C1F7802293CD1F00530747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C1F77F2293CD1F00530747 /* Assets.xcassets */; };
 		88C1F7832293CD1F00530747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C1F7812293CD1F00530747 /* LaunchScreen.storyboard */; };
 		88C1F78E2293CD1F00530747 /* TransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F78D2293CD1F00530747 /* TransitionTests.swift */; };
+		88C1F7992293CD6100530747 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F7982293CD6100530747 /* DetailViewController.swift */; };
+		88C1F79C2293CE1C00530747 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F79B2293CE1C00530747 /* AnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		88C1F7892293CD1F00530747 /* TransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C1F78D2293CD1F00530747 /* TransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTests.swift; sourceTree = "<group>"; };
 		88C1F78F2293CD1F00530747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C1F7982293CD6100530747 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		88C1F79B2293CE1C00530747 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 		88C1F7772293CD1D00530747 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				88C1F79A2293CDE600530747 /* TransitionController */,
 				88C1F7782293CD1D00530747 /* AppDelegate.swift */,
 				88C1F77A2293CD1D00530747 /* ViewController.swift */,
+				88C1F7982293CD6100530747 /* DetailViewController.swift */,
 				88C1F77C2293CD1D00530747 /* Main.storyboard */,
 				88C1F77F2293CD1F00530747 /* Assets.xcassets */,
 				88C1F7812293CD1F00530747 /* LaunchScreen.storyboard */,
@@ -94,6 +100,14 @@
 				88C1F78F2293CD1F00530747 /* Info.plist */,
 			);
 			path = TransitionTests;
+			sourceTree = "<group>";
+		};
+		88C1F79A2293CDE600530747 /* TransitionController */ = {
+			isa = PBXGroup;
+			children = (
+				88C1F79B2293CE1C00530747 /* AnimationController.swift */,
+			);
+			path = TransitionController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C1F79C2293CE1C00530747 /* AnimationController.swift in Sources */,
 				88C1F77B2293CD1D00530747 /* ViewController.swift in Sources */,
 				88C1F7792293CD1D00530747 /* AppDelegate.swift in Sources */,
+				88C1F7992293CD6100530747 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
