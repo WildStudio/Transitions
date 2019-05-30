@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8817100C229FA1EC00D3BA40 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8817100B229FA1EC00D3BA40 /* GradientView.swift */; };
+		8817100E229FC1E400D3BA40 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8817100D229FC1E400D3BA40 /* ShadowView.swift */; };
 		88C1F7792293CD1D00530747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F7782293CD1D00530747 /* AppDelegate.swift */; };
 		88C1F77B2293CD1D00530747 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F77A2293CD1D00530747 /* MainViewController.swift */; };
 		88C1F77E2293CD1D00530747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C1F77C2293CD1D00530747 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		8817100B229FA1EC00D3BA40 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		8817100D229FC1E400D3BA40 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		88C1F7752293CD1D00530747 /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C1F7782293CD1D00530747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88C1F77A2293CD1D00530747 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				8817100B229FA1EC00D3BA40 /* GradientView.swift */,
+				8817100D229FC1E400D3BA40 /* ShadowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8817100E229FC1E400D3BA40 /* ShadowView.swift in Sources */,
 				88C1F79C2293CE1C00530747 /* AnimationController.swift in Sources */,
 				88C1F77B2293CD1D00530747 /* MainViewController.swift in Sources */,
 				8817100C229FA1EC00D3BA40 /* GradientView.swift in Sources */,

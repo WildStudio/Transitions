@@ -28,6 +28,37 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emq-g7-bbA" customClass="ShadowView" customModule="Transition" customModuleProvider="target">
+                                <rect key="frame" x="14" y="90" width="347" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap5-tO-VFB">
+                                        <rect key="frame" x="0.0" y="0.0" width="347" height="220"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHd-Wp-Z81"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ice-fire" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-2m-bHb">
+                                        <rect key="frame" x="135.5" y="57.5" width="76" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="HGa-eB-WDW"/>
+                                            <constraint firstAttribute="height" constant="105" id="x90-Ty-7wd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vbp-2m-bHb" firstAttribute="centerY" secondItem="emq-g7-bbA" secondAttribute="centerY" id="1M5-ca-Fh1"/>
+                                    <constraint firstItem="Ap5-tO-VFB" firstAttribute="width" secondItem="emq-g7-bbA" secondAttribute="width" id="6Gc-At-B7b"/>
+                                    <constraint firstItem="Ap5-tO-VFB" firstAttribute="centerX" secondItem="vbp-2m-bHb" secondAttribute="centerX" id="Ljv-zi-No1"/>
+                                    <constraint firstItem="Ap5-tO-VFB" firstAttribute="centerY" secondItem="vbp-2m-bHb" secondAttribute="centerY" id="Oax-LP-s4S"/>
+                                    <constraint firstItem="vbp-2m-bHb" firstAttribute="centerX" secondItem="emq-g7-bbA" secondAttribute="centerX" id="if7-sq-lA2"/>
+                                    <constraint firstItem="Ap5-tO-VFB" firstAttribute="height" secondItem="emq-g7-bbA" secondAttribute="height" id="vS9-qK-jn5"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-U1-Buq" customClass="GradientView" customModule="Transition" customModuleProvider="target">
                                 <rect key="frame" x="24" y="100" width="327" height="200"/>
                                 <subviews>
@@ -83,12 +114,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Tx-Dc-x2Z" secondAttribute="trailing" symbolic="YES" id="8bQ-LU-fnN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="epE-cD-a6Q" secondAttribute="trailing" symbolic="YES" id="Fdd-JK-3AQ"/>
                             <constraint firstItem="mHy-U1-Buq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="H5M-7U-f1o"/>
+                            <constraint firstItem="emq-g7-bbA" firstAttribute="width" secondItem="mHy-U1-Buq" secondAttribute="width" constant="20" id="IaC-8g-e8z"/>
+                            <constraint firstItem="emq-g7-bbA" firstAttribute="centerY" secondItem="mHy-U1-Buq" secondAttribute="centerY" id="M25-19-xfQ"/>
+                            <constraint firstItem="emq-g7-bbA" firstAttribute="centerX" secondItem="mHy-U1-Buq" secondAttribute="centerX" id="NrF-Mq-bB9"/>
                             <constraint firstItem="mHy-U1-Buq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OoS-c1-YhD"/>
                             <constraint firstItem="mHy-U1-Buq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="R0S-3A-5w4"/>
                             <constraint firstItem="0Tx-Dc-x2Z" firstAttribute="leading" secondItem="epE-cD-a6Q" secondAttribute="leading" id="XHF-fK-EsC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mHy-U1-Buq" secondAttribute="trailing" constant="24" id="daa-aY-TDT"/>
                             <constraint firstItem="0Tx-Dc-x2Z" firstAttribute="bottom" secondItem="mHy-U1-Buq" secondAttribute="top" constant="-8" id="dij-wQ-CkM"/>
                             <constraint firstItem="epE-cD-a6Q" firstAttribute="bottom" secondItem="0Tx-Dc-x2Z" secondAttribute="top" constant="-2" id="fbW-Ba-tuL"/>
+                            <constraint firstItem="emq-g7-bbA" firstAttribute="height" secondItem="mHy-U1-Buq" secondAttribute="height" constant="20" id="iSu-6x-M2A"/>
                             <constraint firstItem="0Tx-Dc-x2Z" firstAttribute="leading" secondItem="mHy-U1-Buq" secondAttribute="leading" id="xen-Y7-XMo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
