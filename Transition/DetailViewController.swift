@@ -31,6 +31,15 @@ class DetailViewController: UIViewController {
         view.layoutIfNeeded()
     }
     
+    func addSpringAnimation(_ animate: Bool) {
+        if animate {
+            let translation: CGFloat = 2.0
+            contentContainerView.transform = CGAffineTransform(translationX: 0, y: translation)
+        } else {
+            contentContainerView.transform = .identity
+        }
+    }
+    
     func setRoundedCorners(isRounded: Bool) {
         contentContainerView.layer.cornerRadius = isRounded ? 14.0 : 0.0
     }
