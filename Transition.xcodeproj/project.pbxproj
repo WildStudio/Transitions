@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8817100C229FA1EC00D3BA40 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8817100B229FA1EC00D3BA40 /* GradientView.swift */; };
 		88C1F7792293CD1D00530747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F7782293CD1D00530747 /* AppDelegate.swift */; };
 		88C1F77B2293CD1D00530747 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F77A2293CD1D00530747 /* MainViewController.swift */; };
 		88C1F77E2293CD1D00530747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C1F77C2293CD1D00530747 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8817100B229FA1EC00D3BA40 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		88C1F7752293CD1D00530747 /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C1F7782293CD1D00530747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88C1F77A2293CD1D00530747 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8817100A229FA1D300D3BA40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8817100B229FA1EC00D3BA40 /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		88C1F76C2293CD1D00530747 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		88C1F7772293CD1D00530747 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				8817100A229FA1D300D3BA40 /* Views */,
 				88C1F79A2293CDE600530747 /* TransitionController */,
 				88C1F7782293CD1D00530747 /* AppDelegate.swift */,
 				88C1F77A2293CD1D00530747 /* MainViewController.swift */,
@@ -213,6 +224,7 @@
 			files = (
 				88C1F79C2293CE1C00530747 /* AnimationController.swift in Sources */,
 				88C1F77B2293CD1D00530747 /* MainViewController.swift in Sources */,
+				8817100C229FA1EC00D3BA40 /* GradientView.swift in Sources */,
 				88C1F7792293CD1D00530747 /* AppDelegate.swift in Sources */,
 				88C1F7992293CD6100530747 /* DetailViewController.swift in Sources */,
 			);

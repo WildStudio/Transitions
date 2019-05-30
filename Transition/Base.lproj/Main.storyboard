@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OkA-Jm-Ap6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,43 +10,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Shop-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Transition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ice-fire" translatesAutoresizingMaskIntoConstraints="NO" id="sKZ-Ft-aHv">
-                                <rect key="frame" x="149.5" y="261" width="76" height="105"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="A Song of Ice and Fire" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tx-Dc-x2Z">
+                                <rect key="frame" x="24" y="65.5" width="222.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GEORGE R.R. MARTIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epE-cD-a6Q">
+                                <rect key="frame" x="24" y="46.5" width="148" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-U1-Buq" customClass="GradientView" customModule="Transition" customModuleProvider="target">
+                                <rect key="frame" x="24" y="100" width="327" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byR-IL-xtN">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxG-AW-f0y"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ice-fire" translatesAutoresizingMaskIntoConstraints="NO" id="sKZ-Ft-aHv">
+                                        <rect key="frame" x="125.5" y="47.5" width="76" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="IGM-DZ-7jK"/>
+                                            <constraint firstAttribute="height" constant="105" id="pSj-gj-QvP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="IGM-DZ-7jK"/>
-                                    <constraint firstAttribute="height" constant="105" id="pSj-gj-QvP"/>
+                                    <constraint firstItem="sKZ-Ft-aHv" firstAttribute="centerX" secondItem="mHy-U1-Buq" secondAttribute="centerX" id="Cg1-me-ygn"/>
+                                    <constraint firstAttribute="height" constant="200" id="Rwn-9B-3qG"/>
+                                    <constraint firstItem="sKZ-Ft-aHv" firstAttribute="centerY" secondItem="mHy-U1-Buq" secondAttribute="centerY" id="UzW-3T-eH7"/>
+                                    <constraint firstItem="byR-IL-xtN" firstAttribute="width" secondItem="mHy-U1-Buq" secondAttribute="width" id="Xy6-qt-AqL"/>
+                                    <constraint firstItem="byR-IL-xtN" firstAttribute="centerX" secondItem="sKZ-Ft-aHv" secondAttribute="centerX" id="hGe-DR-Jbi"/>
+                                    <constraint firstItem="byR-IL-xtN" firstAttribute="centerY" secondItem="sKZ-Ft-aHv" secondAttribute="centerY" id="loR-cm-QlX"/>
+                                    <constraint firstItem="byR-IL-xtN" firstAttribute="height" secondItem="mHy-U1-Buq" secondAttribute="height" id="s2n-5C-cpa"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byR-IL-xtN">
-                                <rect key="frame" x="149.5" y="261" width="76" height="105"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxG-AW-f0y"/>
-                                </connections>
-                            </button>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1585447706" green="0.354401205" blue="0.99508410690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.75208721851864835" green="0.78523802202970228" blue="0.99508410690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                        <point key="value" x="1" y="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="byR-IL-xtN" firstAttribute="trailing" secondItem="sKZ-Ft-aHv" secondAttribute="trailing" id="CBg-zm-iFe"/>
-                            <constraint firstItem="sKZ-Ft-aHv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jce-bj-03T"/>
-                            <constraint firstItem="byR-IL-xtN" firstAttribute="leading" secondItem="sKZ-Ft-aHv" secondAttribute="leading" id="TYL-mQ-Zbf"/>
-                            <constraint firstItem="byR-IL-xtN" firstAttribute="bottom" secondItem="sKZ-Ft-aHv" secondAttribute="bottom" id="ZS2-oc-Scn"/>
-                            <constraint firstItem="sKZ-Ft-aHv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-30" id="cJF-Vi-H6U"/>
-                            <constraint firstItem="byR-IL-xtN" firstAttribute="top" secondItem="sKZ-Ft-aHv" secondAttribute="top" id="phm-eT-wa8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Tx-Dc-x2Z" secondAttribute="trailing" symbolic="YES" id="8bQ-LU-fnN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="epE-cD-a6Q" secondAttribute="trailing" symbolic="YES" id="Fdd-JK-3AQ"/>
+                            <constraint firstItem="mHy-U1-Buq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="H5M-7U-f1o"/>
+                            <constraint firstItem="mHy-U1-Buq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OoS-c1-YhD"/>
+                            <constraint firstItem="mHy-U1-Buq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="R0S-3A-5w4"/>
+                            <constraint firstItem="0Tx-Dc-x2Z" firstAttribute="leading" secondItem="epE-cD-a6Q" secondAttribute="leading" id="XHF-fK-EsC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mHy-U1-Buq" secondAttribute="trailing" constant="24" id="daa-aY-TDT"/>
+                            <constraint firstItem="0Tx-Dc-x2Z" firstAttribute="bottom" secondItem="mHy-U1-Buq" secondAttribute="top" constant="-8" id="dij-wQ-CkM"/>
+                            <constraint firstItem="epE-cD-a6Q" firstAttribute="bottom" secondItem="0Tx-Dc-x2Z" secondAttribute="top" constant="-2" id="fbW-Ba-tuL"/>
+                            <constraint firstItem="0Tx-Dc-x2Z" firstAttribute="leading" secondItem="mHy-U1-Buq" secondAttribute="leading" id="xen-Y7-XMo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Shop" largeTitleDisplayMode="always" id="94c-vA-1F1"/>
                     <connections>
                         <outlet property="imageView" destination="sKZ-Ft-aHv" id="P9p-ag-VD7"/>
                         <segue destination="vok-Ig-HSc" kind="presentation" identifier="showDetail" modalPresentationStyle="overCurrentContext" id="ead-Bx-jFE"/>
@@ -54,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="90"/>
+            <point key="canvasLocation" x="1560.8" y="89.505247376311857"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="brC-61-Hz8">
@@ -99,20 +146,81 @@
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYS-U1-LxZ">
-                                                        <rect key="frame" x="20" y="95.5" width="295" height="830"/>
+                                                        <rect key="frame" x="20" y="212.5" width="295" height="830"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="830" id="qeY-Hd-orX"/>
                                                         </constraints>
-                                                        <string key="text">A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, </string>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <mutableString key="text">Song of Ice and Fire.
+Archmaester Ebrose's history of the wars following the death of King Robert.
+I helped him with the title.
+I suppose I come in for some heavy criticism.
+Oh, I wouldn't say that.
+Oh, he's kind to me.
+Never would've guessed.
+He's not kind? - He - He what? What does he say about me? I don't believe you're mentioned, ahem.
+[DOOR OPENS] [CLEARS THROAT] [CLEARS THROAT] - Your Grace.
+- Your Grace.
+- Your Grace.
+- Your Grace.
+We appear to be missing a Master of Whisperers.
+And a Master of Laws.
+- And a Master of War.
+- Yes, Your Grace.
+Suitable prospects will be brought to you for an audience in the coming weeks.
+And Drogon? Any word? He was last spotted flying east, toward-- The farther away, the better.
+Perhaps I can find him.
+Do carry on with the rest.
+As you wish, Your Grace.
+Ser Podrick.
+[TYRION CLEARS THROAT] We serve at your pleasure, King Bran the Broken, ruler of the Six Kingdoms and Protector of the Realm.
+- Long may he reign.
+- Long may he reign.
+- Long may he reign.
+- Long may he reign.
+Long may he reign.
+That will improve.
+I'm sure it will.
+[CLEARS THROAT, COUGHS] Ser Bronn of the Blackwater, Lord of Highgarden, Lord Paramount of the Reach and Master of Coin, would you say the crown's debt to you has been paid? In full, my lord Hand.
+Good.
+Time to start incurring a new one.
+We have hungry people to feed.
+Can we expect some assistance in this regard? BRONN: Indeed we can.
+Lord Davos, we have an armada to rebuild and ports to repair.
+We have.
+These projects will begin as soon as the Master of Coin and Lord of Lofty Titles provides funding.
+The Master of Coin looks forward to helping the Master of Ships, but first he has to ensure we're not wasting coin, or soon there won't be no more coin.
+"Any more.
+" You Master of Grammar now too? Grandmaester, ahem, it is my theory, based on my years of work on the Casterly Rock sewers, that clean water leads to a healthier population.
+The Archmaester has done some research on this subject and it turns out-- The strong live and the weak don't.
+Find the best builders and set them to the task.
+BRONN: Oh, speaking of builders, all the best brothels burned down.
+The Master of Coin is willing to fund reconstruction.
+SAMWELL: Uh the Archmaester is less than enthusiastic about the salutary effects of brothels.
+BRONN: Well, I imagine he isn't using them properly.
+BRIENNE: I think we can all agree that ships take precedence over brothels.
+BRONN: I think that's a very presumptuous statement.
+TYRION: I once brought a jackass and a honeycomb into a brothel.
+[WIND WHISTLING] [HORN SOUNDING] [INHALES AND EXHALES HEAVILY] [] [] [GHOST WHINES] [] MAN: The Queen in the North! ALL [CHANTING]: The Queen in the North! The Queen in the North! The Queen in the North! The Queen in the North! The Queen in the North! [WIND WHISTLING] [PEOPLE CHATTERING INDISTINCTLY] [] [CHOIR VOCALIZING] 
+
+Read more: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=game-of-thrones&amp;episode=s08e06</mutableString>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <string key="userLabel">Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire, A Song of Ice and Fire,</string>
                                                     </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ice-fire" translatesAutoresizingMaskIntoConstraints="NO" id="yfj-ie-rCt">
+                                                        <rect key="frame" x="129.5" y="91.5" width="76" height="105"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="76" id="5t4-Tw-YvO"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="PGD-1o-HFF"/>
+                                                            <constraint firstAttribute="height" constant="105" id="ebo-hn-lOH"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tvn-vr-ao5" secondAttribute="trailing" constant="20" symbolic="YES" id="2N7-nq-lJr"/>
+                                                    <constraint firstItem="yfj-ie-rCt" firstAttribute="top" secondItem="Tvn-vr-ao5" secondAttribute="bottom" constant="16" id="55a-Ya-YtY"/>
                                                     <constraint firstItem="ikS-JA-2Nj" firstAttribute="bottom" secondItem="Tvn-vr-ao5" secondAttribute="top" constant="-8" id="5MB-HY-Rfm"/>
                                                     <constraint firstItem="cvZ-uQ-IqQ" firstAttribute="top" secondItem="fU8-dT-nSO" secondAttribute="top" constant="16" id="71d-A7-AUg"/>
                                                     <constraint firstAttribute="height" secondItem="uYS-U1-LxZ" secondAttribute="height" id="7vt-F2-qOE"/>
@@ -120,10 +228,11 @@
                                                     <constraint firstItem="Tvn-vr-ao5" firstAttribute="leading" secondItem="ikS-JA-2Nj" secondAttribute="leading" id="ayz-FH-woY"/>
                                                     <constraint firstAttribute="trailing" secondItem="ikS-JA-2Nj" secondAttribute="trailing" constant="24" id="ctB-u0-CE8"/>
                                                     <constraint firstItem="uYS-U1-LxZ" firstAttribute="centerX" secondItem="fU8-dT-nSO" secondAttribute="centerX" id="eja-kJ-HzY"/>
-                                                    <constraint firstItem="uYS-U1-LxZ" firstAttribute="top" secondItem="Tvn-vr-ao5" secondAttribute="bottom" constant="20" id="gAT-gm-HBO"/>
                                                     <constraint firstItem="ikS-JA-2Nj" firstAttribute="top" secondItem="fU8-dT-nSO" secondAttribute="top" constant="24" id="gBG-c9-6HX"/>
+                                                    <constraint firstItem="yfj-ie-rCt" firstAttribute="centerX" secondItem="fU8-dT-nSO" secondAttribute="centerX" id="ihA-ht-0tF"/>
                                                     <constraint firstItem="ikS-JA-2Nj" firstAttribute="leading" secondItem="fU8-dT-nSO" secondAttribute="leading" constant="16" id="phl-13-2dW"/>
                                                     <constraint firstItem="uYS-U1-LxZ" firstAttribute="leading" secondItem="fU8-dT-nSO" secondAttribute="leading" constant="20" id="wRp-Fj-4bn"/>
+                                                    <constraint firstItem="uYS-U1-LxZ" firstAttribute="top" secondItem="yfj-ie-rCt" secondAttribute="bottom" constant="16" id="yXb-FU-huz"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -166,12 +275,32 @@
                         <outlet property="containerTopConstraint" destination="5ml-VX-FEj" id="FWb-n0-VH7"/>
                         <outlet property="containerTrailingConstraint" destination="Lw3-Or-f92" id="ung-FE-4n6"/>
                         <outlet property="contentContainerView" destination="dce-FR-Yo9" id="kAP-XD-zME"/>
+                        <outlet property="imageHeightConstraint" destination="ebo-hn-lOH" id="lvM-A3-Kka"/>
                         <outlet property="scrollView" destination="i2d-DZ-5JJ" id="gog-fk-hUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhc-qF-Rrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1535" y="91"/>
+            <point key="canvasLocation" x="2278" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8SA-z6-AEj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OkA-Jm-Ap6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" largeTitles="YES" id="qRz-yV-Ktr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Enw-DU-Hcw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Kd-ZG-hIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="90"/>
         </scene>
     </scenes>
     <resources>

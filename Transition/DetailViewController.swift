@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
     @IBOutlet private weak var containerTrailingConstraint: NSLayoutConstraint!
     @IBOutlet private weak var containerTopConstraint: NSLayoutConstraint!
     @IBOutlet private weak var containerBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
